@@ -13,7 +13,7 @@
 
 /* Fonts */
 @font-face{
-    font-family: 'Blockletter';
+    font-family: 'Main';
     src: url(../fonts/Blockletter.otf);
 }
 
@@ -34,6 +34,26 @@
 .lightred-text{color: var(--lightred)}
 .yellow-text{color: var(--yellow)}
 .white-text{color: var(--white)}
+.stroke{
+    text-shadow:
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black),
+    0 0 2px var(--black),0 0 2px var(--black);
+    letter-spacing: 3px;
+}
 
 /* Body elements */
 body{
@@ -46,17 +66,17 @@ body{
 }
 .body{
     margin: 20px 5% 0 5%;
-    padding-bottom: 64px
+    padding-bottom: 64px;
 }
 .center{
     text-align: center;
 }
 .body h1{
-    font-family: 'Blockletter', Arial, Helvetica, sans-serif;
+    font-family: 'Main', Arial, Helvetica, sans-serif;
     font-size: 64px;
 }
 .body h2{
-    font-family: 'Blockletter', Arial, Helvetica, sans-serif;
+    font-family: 'Main', Arial, Helvetica, sans-serif;
     font-size: 48px;
 }
 .body h3{
