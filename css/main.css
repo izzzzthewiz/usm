@@ -7,6 +7,8 @@
     --medred: #F66582;
     --lightred: #FBB2C0;
     --yellow: #FFC700;
+    --black: #222222;
+    --white: #eeeeee;
 }
 
 /* Fonts */
@@ -23,10 +25,20 @@
     font-size: 20px;
 }
 
+/* Colors */
+.blue-text{color: var(--blue)}
+.medblue-text{color: var(--medblue)}
+.lightblue-text{color: var(--lightblue)}
+.red-text{color: var(--red)}
+.medred-text{color: var(--medred)}
+.lightred-text{color: var(--lightred)}
+.yellow-text{color: var(--yellow)}
+.white-text{color: var(--white)}
+
 /* Body elements */
 body{
-    background-color: #eee;
-    color: #222;
+    background-color: var(--white);
+    color: var(--black);
 }
 .page-wrap{
     min-height: 100vh;
@@ -34,7 +46,7 @@ body{
 }
 .body{
     margin: 20px 5% 0 5%;
-    padding-bottom: 80px
+    padding-bottom: 64px
 }
 .center{
     text-align: center;
@@ -53,126 +65,59 @@ body{
 .body p{
     padding-top: 20px;
 }
-
-/* Colors */
-.blue{color: var(--blue)}
-.medblue{color: var(--medblue)}
-.lightblue{color: var(--lightblue)}
-.red{color: var(--red)}
-.medred{color: var(--medred)}
-.lightred{color: var(--lightred)}
-.yellow{color: var(--yellow)}
-
-/* Navbar */
-.nav{
-    background-color: var(--blue);
-    overflow: hidden;
-}
-#navcontent{
-    margin-left: 10px;
-}
-.nav a{
-    font-size: 24px;
-    font-family: 'Blockletter', Arial, Helvetica, sans-serif;
-    color: #eee;
-    text-align: center;
-    text-decoration: none;
-    float: left;
-    padding: 5px 10px 5px 10px;
-    border-top: 5px solid var(--blue);
-    border-bottom: 5px solid var(--blue);
-}
-.nav a:hover{
-    color: var(--yellow)
-}
-.nav a.active{
-    border-bottom: 5px solid var(--yellow);
-}
-.nav img{
-    float: left;
-    width: 44px;
-    padding: 5px 10px 0 0;
-    cursor: pointer;
-}
-/* Dropdown */
-.dropdown{
-    float: left;
-    overflow: hidden;
-}
-.dropdown button{
-    font-size: 24px;
-    font-family: 'Blockletter', Arial, Helvetica, sans-serif;
-    color: #eee;
-    text-align: center;
-    text-decoration: none;
-    background-color: var(--blue);
-    padding: 5px 10px 5px 20px;
-    border: none;
-    outline: none;
-    border-top: 5px solid var(--blue);
-    border-bottom: 5px solid var(--blue);
-}
-.dropdown button:hover{
-    color: var(--yellow);
-    cursor: pointer;
-}
-.dropdown button i{
-    color: #eee;
-    padding-left: 10px;
+.body p a{
+    color: var(--black);
     font-size: 20px;
+    color: var(--medblue);
 }
-.dropdown button:hover i{
-    color: var(--yellow);
-}
-.dropdown button.active{
-    border-bottom: 5px solid var(--yellow);
-}
-.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: var(--blue);
-    min-width: 160px;
-    z-index: 1;
-    margin-top: 0px;
-    box-shadow: -5px 5px 5px rgba(34,34,34,0.5);
-}
-.dropdown-content a{
-    float: none;
-    color: #eee;
-    padding: 5px 15px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    border-left: 5px solid var(--blue);
-    border-top: none;
-    border-bottom: none;
-}
-.dropdown-content a:hover{
-    color: var(--yellow);
-    border-top: none;
-    border-bottom: none;
-}
-.dropdown-content a.active{
-    border-left: 5px solid var(--yellow);
-    border-top: none;
-    border-bottom: none;
-}
-.dropdown:hover .dropdown-content{
-    display: block;
+.body a:hover{
+    color: var(--lightblue);
+    text-decoration: underline;
+    cursor: pointer;
 }
 
-/* Footer */
-.footer{
-    background-color: var(--red);
-    text-align: center;
-    color: white;
-    padding: 10px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+/* Boxes */
+.box{
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 10px;
+    overflow: hidden;
 }
-.footer p, a{
-    font-size: 16px;
-    color: white;
+/* Box text */
+.box h1, .box h2, .box h3 {
+    padding: 0;
+    
 }
+.box p{
+    padding: 0px 20px 20px 20px;
+}
+/* Box colors */
+.box.blue{background-color: var(--blue)}
+.box.medblue{background-color: var(--medblue)}
+.box.lightblue{background-color: var(--lightblue)}
+.box.red{background-color: var(--red)}
+.box.medred{background-color: var(--medred)}
+.box.lightred{background-color: var(--lightred)}
+.box.yellow{background-color: var(--yellow)}
+.box.white{background-color: var(--white)}
+/* Box borders */
+.box.blue-border{border: 2px solid var(--blue);}
+.box.medblue-border{border: 2px solid var(--medblue);}
+.box.lightblue-border{border: 2px solid var(--lightblue);}
+.box.red-border{border: 2px solid var(--red);}
+.box.medred-border{border: 2px solid var(--medred);}
+.box.lightred-border{border: 2px solid var(--lightred);}
+.box.yellow-border{border: 2px solid var(--yellow);}
+.box.black-border{border: 2px solid var(--black);}
+/* Box floats */
+.box .float-container{width: 100%;}
+.box .float-left{float:left;}
+.box .float-20{width: 10%;}
+.box .float-30{width: 20%;}
+.box .float-40{width: 30%;}
+.box .float-50{width: 40%;}
+.box .float-60{width: 50%;}
+.box .float-70{width: 60%;}
+.box .float-80{width: 70%;}
+.box .float-right{float: right;}
+.box img{margin-left: auto;margin-right: auto;padding: 20px;}
