@@ -14,7 +14,7 @@
 /* Fonts */
 @font-face{
     font-family: 'Main';
-    src: url(../fonts/Roadstore.ttf);
+    src: url(../fonts/Bigboz.otf);
 }
 @font-face{
     font-family: 'Block';
@@ -80,7 +80,7 @@ body{
     font-size: 64px;
 }
 .body h2{
-    font-family: 'Main', Arial, Helvetica, sans-serif;
+    font-family: 'Block', Arial, Helvetica, sans-serif;
     font-size: 48px;
 }
 .body h3{
