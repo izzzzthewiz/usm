@@ -8,7 +8,7 @@
 }
 .nav a{
     font-size: 24px;
-    font-family: 'Main', Arial, Helvetica, sans-serif;
+    font-family: 'Block', Arial, Helvetica, sans-serif;
     color: var(--white);
     text-align: center;
     text-decoration: none;
@@ -36,7 +36,7 @@
 }
 .dropdown button{
     font-size: 24px;
-    font-family: 'Main', Arial, Helvetica, sans-serif;
+    font-family: 'Block', Arial, Helvetica, sans-serif;
     color: var(--white);
     text-align: center;
     text-decoration: none;
@@ -46,9 +46,6 @@
     outline: none;
     border-top: 5px solid var(--blue);
     border-bottom: 5px solid var(--blue);
-}
-.dropdown button:hover{
-    color: var(--yellow);
 }
 .dropdown button i{
     color: var(--white);
@@ -68,7 +65,7 @@
     min-width: 160px;
     z-index: 1;
     margin-top: 0px;
-    box-shadow: -5px 5px 10px rgba(34,34,34,1);
+    box-shadow: -5px 10px 10px rgba(34,34,34,1);
 }
 .dropdown-content a{
     float: none;
