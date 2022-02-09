@@ -43,7 +43,7 @@ function redirect(url){
 
 
 
-function loadModals(){
+function loadHomeModals(){
     const modal = document.getElementById('modal')
     const modalImg = document.getElementById('modalImg')
     const img1 = document.getElementById('img1')
