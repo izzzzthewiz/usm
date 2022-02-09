@@ -4,7 +4,7 @@ function loadNav(id){
         <a href="https://izzzzthewiz.github.io/usm/" id="home">Home</a>
         <a href="https://izzzzthewiz.github.io/usm/about" id="about">About</a>
         <div class="dropdown" id="dropdown">
-            <button id="links" onclick="location.href = '#links'">Links<i class="fas fa-caret-right" id="arrow"></i></button>
+            <button id="links">Links<i class="fas fa-caret-right" id="arrow"></i></button>
             <div class="dropdown-content">
                 <a href="https://izzzzthewiz.github.io/usm/discord" target="_blank" id="discord">Discord</a>
                 <a href="https://izzzzthewiz.github.io/usm/roster" target="_blank" id="roster">Roster</a>
