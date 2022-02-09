@@ -51,9 +51,7 @@
     color: var(--white);
     padding-left: 10px;
     font-size: 20px;
-}
-.dropdown button:hover i{
-    color: var(--yellow);
+    transition: transform .5s;
 }
 .dropdown button.active{
     border-bottom: 5px solid var(--yellow);
@@ -90,4 +88,8 @@
 }
 .dropdown:hover .dropdown-content{
     display: block;
+}
+.dropdown:hover button i{
+    color: var(--yellow);
+    transform: rotate(90deg) translateX(-6px) translateY(-6px);
 }
