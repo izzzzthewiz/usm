@@ -36,17 +36,25 @@
             
             <div class="box medred blue-border">
                 <div class="float-container">
-                    <img class="float-left" width="50%" src="./img/bases/garage.png">
-                    <img class="float-right" width="20%" src="./img/models/backburn-longbow.png">
+                    <img class="float-left modal" id="img1" alt="Rockford Customs USM base" width="50%" src="./img/bases/garage.png">
+                    <img class="float-right modal" id="img2" alt="Backburn Player Model with KBS Longbow" width="20%" src="./img/models/backburn-longbow.png">
                 </div>
             </div>
             
             <div class="box medblue red-border">
                 <div class="float-container">
-                    <img class="float-left" width="20%" src="./img/models/noscopejfk-terminator.png">
-                    <img class="float-right" width="50%" src="./img/bases/yellow.png">
+                    <img class="float-left modal" id="img3" alt="NoScopedJFK Player Model with Terminator" width="20%" src="./img/models/noscopejfk-terminator.png">
+                    <img class="float-right modal" id="img4" alt="Yellow Warehouse USM base" width="50%" src="./img/bases/yellow.png">
                 </div>
             </div>
+
+        </div>
+
+        <div class="modal-container" id="modal">
+
+            <i class="fas fa-times close" id="modal-close"></i>
+            <img class="modal-content" id="modalImg">
+            <div id="modal-caption"></div>
 
         </div>
 
@@ -58,6 +66,7 @@
 <script>
     loadNav('home')
     loadFooter()
+    loadModals()
 </script>
 
 </html>

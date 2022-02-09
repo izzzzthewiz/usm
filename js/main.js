@@ -20,10 +20,9 @@ function loadNav(id){
 
 
 
-
 function loadFooter(){
     const htmlString = `
-    <p>Copyright &copy; <script>document.write(new Date().getFullYear())</script> United States Miltia</p>
+    <p>Copyright &copy <script>document.write(new Date().getFullYear())</script> United States Miltia</p>
     <a href="https://izzzzthewiz.github.io/usm/discord" target="_blank">Discord</a> | 
     <a href="https://izzzzthewiz.github.io/usm/roster" target="_blank">Roster</a> | 
     <a href="https://izzzzthewiz.github.io/usm/sop" target="_blank">SOP</a> | 
@@ -40,4 +39,28 @@ function redirect(url){
     link.setAttribute('href', url)
     link.innerHTML = url
     location.href = url
+}
+
+
+
+function loadModals(){
+    const modal = document.getElementById('modal')
+    const modalImg = document.getElementById('modalImg')
+    const img1 = document.getElementById('img1')
+    const img2 = document.getElementById('img2')
+    const img3 = document.getElementById('img3')
+    const img4 = document.getElementById('img4')
+    const caption = document.getElementById('modal-caption')
+    const modalclose = document.getElementById('modal-close')
+    const imgs = [img1, img2, img3, img4]
+    for (const img of imgs) {
+        img.addEventListener('click', function() {
+            modal.style.display = 'block'
+            modalImg.src = this.src
+            caption.innerHTML = this.alt
+        })
+    }
+    modalclose.addEventListener('click', function() {
+        modal.style.display = 'none'
+    })
 }

@@ -63,7 +63,7 @@
     min-width: 160px;
     z-index: 1;
     margin-top: 0px;
-    box-shadow: -5px 10px 10px rgba(34,34,34,1);
+    box-shadow: -5px 10px 10px rgba(34,34,34,0.9);
 }
 .dropdown-content a{
     float: none;
