@@ -3,6 +3,7 @@ function loadNav(id){
         <img src="https://izzzzthewiz.github.io/usm/img/logo.png" onclick="location.href = 'https://izzzzthewiz.github.io/usm/'">
         <a href="https://izzzzthewiz.github.io/usm/" id="home">Home</a>
         <a href="https://izzzzthewiz.github.io/usm/about" id="about">About</a>
+        <a href="https://izzzzthewiz.github.io/usm/content" id="content">Content</a>
         <div class="dropdown" id="dropdown">
             <button id="links">Links<i class="fas fa-caret-right" id="arrow"></i></button>
             <div class="dropdown-content">
