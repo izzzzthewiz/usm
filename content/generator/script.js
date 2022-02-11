@@ -11,7 +11,7 @@ async function loadJSON(url){
     const json = await (await fetch(url)).json().catch(e => console.error(e))
     preview.innerText = JSON.stringify(json, '\n', 2)
 }
-loadJSON('https://izzzzthewiz.github.io/content/generator/api/videos.json')
+loadJSON('https://izzzzthewiz.github.io/usm/content/generator/api/videos.json')
 
 function getJSON(){
     const json = preview.innerText
