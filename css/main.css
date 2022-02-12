@@ -148,11 +148,15 @@ body{
 /* Box Links */
 a.contenttitle{
     font-family: 'Block', Arial, Helvetica, sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     text-decoration: none;
 }
 a:hover.contenttitle{
     text-decoration: underline;
+}
+.box iframe{
+    width: 90%;
+    padding-bottom: 10px;
 }
 
 /* Modals */
