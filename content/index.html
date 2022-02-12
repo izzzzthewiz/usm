@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
     <script src="../js/main.js"></script>
-    <script src="./content.js"></script>
     <meta property="og:title" content="Content - United States Militia">
     <meta property="og:description" content="Watch cool videos created by USM members!">
     <meta property="og:type" content="website">
@@ -32,6 +31,14 @@
                 Content
             </h1>
 
+            <div class="search">
+                <input type="text" id="searchbar">
+                <button id="searchbtn"><i class="fas fa-search"></i></button>
+            </div>
+            <div class="searchclear">
+                <button id="clearbtn">Clear search</button>
+            </div>
+
             <div class="contentwrap" id="contentwrap">
                 
             </div>
@@ -46,5 +53,6 @@
     loadNav('content')
     loadFooter()
 </script>
+<script src="./content.js"></script>
 
 </html>
