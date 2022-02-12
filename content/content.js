@@ -15,14 +15,13 @@ const displayVideos = (videos) => {
     const contentwrap = document.getElementById('contentwrap')
     const htmlString = videos
     .map((video) => {
-        const embed = `<iframe width='640' height='360' style='border: none;' src='${video.url}' allow='autoplay' allowfullscreen></iframe>`
         return `
         <div class="box lightred blue-border">
             <div class="center">
                 <a class="red-text contenttitle" href="${video.url}" target="_blank">
                     ${video.title}
                 </a>
-                ${embed}
+                <iframe width="640" height="360" style="border: none;" src="${video.url.replace('watch?v=', 'embed/')}" allow="autoplay" allowfullscreen></iframe>
                 <p>
                     Creator: ${video.creator}
                 </p>
