@@ -50,7 +50,7 @@ async function search(searchString) {
         });
         displayVideos(filteredVideos);
         if (filteredVideos.toString() == ''){
-            contentwrap.innerHTML = `<h1 class="center red-text" id="noresults">No videos found!</h1>`;
+            contentwrap.innerHTML = `<h2 class="center red-text" id="noresults">No videos found!</h2>`;
         }
         cleardiv.classList.add('show')
     } catch(err) {

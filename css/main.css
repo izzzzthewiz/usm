@@ -222,7 +222,7 @@ img.modal{
 #searchbar{
     border: 2px solid var(--black);
     border-radius: 50px 0 0 50px;
-    width: 75%;
+    width: 70%;
     height: 30px;
     padding: 0 20px 0 20px;
     background-color: #fff;
