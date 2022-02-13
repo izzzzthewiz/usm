@@ -9,6 +9,14 @@
     --yellow: #FFC700;
     --black: #222222;
     --white: #EEEEEE;
+    /* Light colors */
+    --blue-50: rgba(0, 64, 174, 0.5);
+    --medblue-50: rgba(0, 90, 245, 0.5);
+    --lightblue-50: rgba(71, 139, 255, 0.5);
+    --red-50: rgba(191, 11, 48, 0.5);
+    --medred-50: rgba(246, 101, 130, 0.5);
+    --lightred-50: rgba(251, 178, 192, 0.5);
+    --yellow-50: rgba(255, 199, 0, 0.5);
 }
 
 /* Fonts */

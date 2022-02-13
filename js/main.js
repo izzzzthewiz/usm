@@ -3,6 +3,7 @@ function loadNav(id){
         <img src="https://izzzzthewiz.github.io/usm/img/logo.png" onclick="location.href = 'https://izzzzthewiz.github.io/usm/'">
         <a href="https://izzzzthewiz.github.io/usm/" id="home">Home</a>
         <a href="https://izzzzthewiz.github.io/usm/about" id="about">About</a>
+        <a href="https://izzzzthewiz.github.io/usm/ranks" id="ranks">Ranks</a>
         <a href="https://izzzzthewiz.github.io/usm/content" id="content">Content</a>
         <div class="dropdown" id="dropdown">
             <button id="links">Links<i class="fas fa-caret-right" id="arrow"></i></button>
@@ -52,7 +53,6 @@ function loadHomeModals(){
     const img3 = document.getElementById('img3')
     const img4 = document.getElementById('img4')
     const caption = document.getElementById('modal-caption')
-    const modalclose = document.getElementById('modal-close')
     const imgs = [img1, img2, img3, img4]
     for (const img of imgs) {
         img.addEventListener('click', function() {
@@ -61,7 +61,40 @@ function loadHomeModals(){
             caption.innerHTML = this.alt
         })
     }
-    modalclose.addEventListener('click', function() {
+    modal.addEventListener('click', function() {
+        modal.style.display = 'none'
+    })
+}
+
+
+
+function loadRankModals(){
+    const modal = document.getElementById('modal');
+    const modalImg = document.getElementById('modalImg');
+    
+    const pvt = document.getElementById('pvt');
+    const pfc = document.getElementById('pfc');
+    const cpl = document.getElementById('cpl');
+    const spc = document.getElementById('spc');
+    const sgt = document.getElementById('sgt');
+    const ssgt = document.getElementById('ssgt');
+    const sgm = document.getElementById('sgm');
+    const lt = document.getElementById('lt');
+    const cpt = document.getElementById('cpt');
+    const maj = document.getElementById('maj');
+    const sec = document.getElementById('sec');
+    const vp = document.getElementById('vp');
+    const pres = document.getElementById('pres');
+    const caption = document.getElementById('modal-caption')
+    const imgs = [pvt, pfc, cpl, spc, sgt, ssgt, sgm, lt, cpt, maj, sec, vp, pres]
+    for (const img of imgs){
+        img.addEventListener('click', function() {
+            modal.style.display = 'block'
+            modalImg.src = this.src
+            caption.innerHTML = this.alt
+        })
+    }
+    modal.addEventListener('click', function() {
         modal.style.display = 'none'
     })
 }

@@ -1,0 +1,13 @@
+.insigniacontainer{
+    width: 100%;
+}
+.insigfloat-3{
+    width: calc(33.3% - 40px);
+    float: left;
+    cursor: pointer;
+}
+.insigfloat-4{
+    width: calc(25% - 40px);
+    float: left;
+    cursor: pointer;
+}

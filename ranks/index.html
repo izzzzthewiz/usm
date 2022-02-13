@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home - United States Militia</title>
+    <link rel="icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/boxes.css">
+    <link rel="stylesheet" href="../css/insignia.css">
+    <link rel="stylesheet" href="../css/modals.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <script src="../js/main.js"></script>
+    <meta property="og:title" content="Home - United States Militia">
+    <meta property="og:description" content="The official website for the USM family on GamingLight's PoliceRP server!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://izzzzthewiz.github.io/usm/img/logo.png">
+    <meta property="og:url" content="https://izzzzthewiz.github.io/usm/">
+    <meta name="theme-color" content="#0040AE">
+    <meta name="keywords" content="United, States, Militia, USM, GamingLight, Gaming, Light, GL, Police, RP, PoliceRP, PRP">
+</head>
+
+<body>
+    <div class="page-wrap">
+
+        <div class="nav">
+            <div id="navcontent"></div>
+        </div>
+
+        <div class="body">
+            
+            <h1 class="center yellow-text stroke">
+                Ranks
+            </h1>
+            <p class="center">
+                USM has 4 different levels of ranks: Enlisted, Supervisor, Command and Management. Below are those ranks listed under their corresponding level.
+            </p>
+
+            <div class="box yellow-50 black-border">
+                <h2 class="center yellow-text stroke">
+                    Management
+                </h2>
+                <div class="insigniacontainer">
+
+                    <img src="../img/insignia/Pres.png" alt="President Insignia" class="insigfloat-3 modal" id="pres">
+                    <img src="../img/insignia/VP.png" alt="Vice President Insignia" class="insigfloat-3 modal" id="vp">
+                    <img src="../img/insignia/SEC.png" alt="Secretary Insignia" class="insigfloat-3 modal" id="sec">
+
+                </div>
+            </div>
+
+            <div class="box lightblue-50 black-border">
+                <h2 class="center lightblue-text stroke">
+                    Command
+                </h2>
+                <div class="insigniacontainer">
+
+                    <img src="../img/insignia/MAJ.png" alt="Major Insignia" class="insigfloat-3 modal" id="maj">
+                    <img src="../img/insignia/CPT.png" alt="Captain Insignia" class="insigfloat-3 modal" id="cpt">
+                    <img src="../img/insignia/LT.png" alt="Lieutenant Insignia" class="insigfloat-3 modal" id="lt">
+
+                </div>
+            </div>
+
+            <div class="box medblue-50 black-border">
+                <h2 class="center medblue-text stroke">
+                    Supervisors
+                </h2>
+                <div class="insigniacontainer">
+
+                    <img src="../img/insignia/SGM.png" alt="Sergeant Major Insignia" class="insigfloat-3 modal" id="sgm">
+                    <img src="../img/insignia/SSGT.png" alt="Staff Sergeant Insignia" class="insigfloat-3 modal" id="ssgt">
+                    <img src="../img/insignia/SGT.png" alt="Sergeant Insignia" class="insigfloat-3 modal" id="sgt">
+
+                </div>
+            </div>
+
+            <div class="box blue-50 black-border">
+                <h2 class="center blue-text stroke">
+                    Enlisted
+                </h2>
+                <div class="insigniacontainer">
+
+                    <img src="../img/insignia/SPC.png" alt="Specialist Insignia" class="insigfloat-4 modal" id="spc">
+                    <img src="../img/insignia/CPL.png" alt="Corporal Insignia" class="insigfloat-4 modal" id="cpl">
+                    <img src="../img/insignia/PFC.png" alt="Private 1st Class Insignia" class="insigfloat-4 modal" id="pfc">
+                    <img src="../img/insignia/PVT.png" alt="Private Insignia" class="insigfloat-4 modal" id="pvt">
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer" id="footer"></div>
+
+        <div class="modal-container" id="modal">
+
+            <i class="fas fa-times close" id="modal-close"></i>
+            <img class="modal-content" id="modalImg">
+            <div id="modal-caption"></div>
+
+        </div>
+
+    </div>
+</body>
+
+<script>
+    loadNav('ranks')
+    loadFooter()
+    loadRankModals()
+</script>
+
+</html>

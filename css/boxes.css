@@ -22,6 +22,13 @@
 .box.lightred{background-color: var(--lightred)}
 .box.yellow{background-color: var(--yellow)}
 .box.white{background-color: var(--white)}
+.box.blue-50{background-color: var(--blue-50)}
+.box.medblue-50{background-color: var(--medblue-50)}
+.box.lightblue-50{background-color: var(--lightblue-50)}
+.box.red-50{background-color: var(--red-50)}
+.box.medred-50{background-color: var(--medred-50)}
+.box.lightred-50{background-color: var(--lightred-50)}
+.box.yellow-50{background-color: var(--yellow-50)}
 /* Box borders */
 .box.blue-border{border: 2px solid var(--blue);}
 .box.medblue-border{border: 2px solid var(--medblue);}
