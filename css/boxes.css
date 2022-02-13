@@ -60,7 +60,7 @@ a:hover.contenttitle{
     text-decoration: underline;
 }
 .box iframe{
-    width: 60vmax;
-    height: 33.75vmax;
-    padding: 0 20px 10px 20px;
+    width: 64vmax;
+    height: 36vmax;
+    padding-bottom: 10px;
 }
